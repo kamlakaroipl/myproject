@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>For order </title>
+	<style>
+		
+		#form{
+			background-color:greenyellow;
+			border-radius: 85px 40px 60px 40px;
+			height:400px ;
+			width: 400px;
+			margin-left: 420px;
+			margin-top: 30px;
+			text-align: center;
+			padding-top: 100px;
+			border: 10px solid orange;
+			font-size: 25px;
+			color:darkred ;
+
+
+		}
+		body{
+			background: yellow;
+		}
+		#name{
+			border-color: brown;
+
+		}
+		#phone{
+			border-color: brown;
+		}
+        
+        #email{
+        	border-color: brown;
+        }
+        #city{
+        	border-color: brown;
+        
+        }
+        #submit{
+        	border-color: pink;
+        	font-size: 25px;
+        
+        }
+	</style>
+</head>
+<body>
+
+	<div id="form">
+	<form>
+		<strong>Name</strong>
+		<input id="name" type="text" placeholder="Enter your Name">
+		<br><br>
+		<strong>Phone no.</strong>
+		<input id="phone" type="text" placeholder="Enter your Phone No.">
+		<br><br>
+		<strong>Select City</strong>
+		<select id="city">
+		<option selected>City</option>
+
+		<option>GHAZIABAD</option>
+		<option>DELHI</option>
+		<option>MEERUT</option>
+		<option>MUMBAI</option>
+		<option>BANGALORE</option>
+	</Select>
+	<br><br>
+		<strong>Email id.</strong>
+		<input id="email" type="text" placeholder="Enter your Email id.">
+		<br><br>
+		<button id="submit" onclick="myFunction()"> Submit</button>
+
+		<p id="demo"></p>
+
+		<script>
+			function myFunction(){
+				var txt;
+				if(confirm("PRESS A BUTTON FOR ORDER OR CANCEL")){
+					txt="You pressed Cancel!";
+				}
+				document.getElementById("demo").innerHTML = txt;
+			}
+		</script>
+	</select>
+
+
+		
+	</form>
+</div>
+
+
+		
+	</form>
+
+		
+	</form>
+</div>
+</body>
+</html>
